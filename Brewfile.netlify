@@ -1,1 +1,4 @@
-brew install --cask "racket"
+tap "homebrew/bundle"
+tap "homebrew/cask"
+tap "homebrew/core"
+cask "racket"
