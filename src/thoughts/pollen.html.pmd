@@ -1,0 +1,71 @@
+#lang pollen
+◊(define-meta title "Migrating my blog to Pollen")
+◊(define-meta date "2022/04/24")
+# ◊(select-from-metas 'title metas)
+◊(select-from-metas 'date metas)
+
+
+I just moved by blog from Gatsby to Pollen. I wasn't happy with the GraphQL magic and JSX that I had to use in order to get a simple static site with HTML and CSS. 11ty seemed to do what I want, but I found writing HTML with Liquid and Nunjucks frustrating.
+
+I wanted a framework that would allow me to write custom tags that could expand into valid HTML when compiled. If I could actually understand how it works that would be great too. Ideally the project structure would look something like this:
+
+```
+template.html
+index.html
+other-pages/
+  index.html
+  post.md
+style.css
+
+->
+
+build/
+  index.html
+  other-pages/
+    index.html
+    post.html
+  style.css
+...
+```
+
+
+No crazy components, just a pre-processor that handles turning templated HTML and markdown into plain old HTML.
+
+## Enter Pollen
+
+Pollen is a tool designed by Matthew Butterick to produce high quality online books. It takes in Pollen markup files and spits out HTML (or CSS, PDFs, XML, LaTex, you name it).
+
+You can evaluate arbitrary Racket expressions using `◊"◊"` Unlike most static site generators and templating tools, Pollen markup gives you the full power of a programming language -- not some subset or an inflexible toy language.
+
+
+```racket
+◊"◊"h1{Thoughts}
+
+A collection of short blog posts about ...
+
+◊"◊"(apply ul #:class "toc"
+  (map (compose li node->link) (children 'thoughts/index.html)))
+```
+
+Coming from 11ty's built-in templating functions, this was *liberating*. I'm not stuck with `titleCase`, `filter`, or dealing with exporting ugly Javscript template strings. I can write and import Racket functions that do _exactly_ what I want as if it were any other program.
+
+In fact, Pollen markup files are really just glorified Racket programs! The reader parses everything into an s-expression and converts it to HTML.
+
+The file structure is plain simple. You have `whatever.html.pm` files that compile to `whatever.html` files under a build directory. Exactly what I wanted.
+
+
+## Drawbacks
+
+Pollen wasn't really built as a blogging tool, though. I still need to manually make sitemap, rss feed, and SEO tags. As with all website rewrites, I'm a concerned that Google will nuke my SEO score into the ground, throwing `ryanjung.dev` into obscurity (not that I was ever not obscure).
+
+But Pollen is really flexible. Like I said, its just a file pre-processor at heart so you can automate most of the files you need.
+
+The one killer feature Pollen doesnt support is templates for templates. Right now you can only write templates in their source language.
+
+(AFAIK, email me if you know a way to do either!)
+
+## Write your own Pollen blog!
+
+If you're scarred by other static site generation tools and get tingles from saying "I built my website in Racket", then I highly reccommend Pollen.
+
+If you need a template, all the source code for my website can be found here.

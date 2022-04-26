@@ -1,0 +1,8 @@
+#lang pollen
+
+index.html
+about/index.html
+◊thoughts/index.html{
+    thoughts/pollen.html
+    thoughts/links.html
+    thoughts/quotes.html}
