@@ -1,4 +1,4 @@
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/core"
-brew "minimal-racket"
+brew "racket"
