@@ -1,7 +1,7 @@
 [build]
   publish = "build"
   command = """
-    raco pkg install 
+    raco pkg install \
       --catalog https://pkgs.racket-lang.org \
       --catalog https://pkg-build.racket-lang.org/server/built/catalog/ \
       --binary \
