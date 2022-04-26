@@ -1,0 +1,6 @@
+[build]
+  publish = "build"
+  command = """
+    raco pkg install --auto pollen
+    raco pollen publish build
+  """
