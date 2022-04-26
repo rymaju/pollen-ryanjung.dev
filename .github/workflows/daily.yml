@@ -1,0 +1,18 @@
+# https://mtsknn.fi/blog/how-to-trigger-daily-netlify-builds-using-github-actions/
+# NETLIFY_DAILY_BUILD_HOOK must be set in secrets
+name: Daily Netlify build trigger
+
+on:
+  schedule:
+    # Every day at midnight
+    - cron: '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Curl request to Netlify's build hook
+        env:
+          BUILD_HOOK: ${{ secrets.NETLIFY_DAILY_BUILD_HOOK }}
+        run: |
+          curl -X POST -d {} "$BUILD_HOOK"
