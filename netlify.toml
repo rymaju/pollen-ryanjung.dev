@@ -1,7 +1,7 @@
 [build]
   publish = "build"
   command = """
-    raco pkg install --no-docs --jobs 1 --auto pollen  &&
+    raco pkg install --no-docs --auto pollen  &&
     mkdir build &&
     raco pollen publish src build
   """
