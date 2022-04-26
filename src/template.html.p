@@ -2,7 +2,8 @@
 ◊(define title (or (select 'title metas) (select 'h1 doc) "Ryan Jung"))
 ◊(define desc  (or (select 'desc metas) "My personal site, a web blog about software development, functional programming, and programming languages."))
 
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
