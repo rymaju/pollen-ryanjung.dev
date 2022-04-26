@@ -1,1 +1,1 @@
-brew install racket
+brew install --cask "racket"
