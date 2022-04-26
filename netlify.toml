@@ -4,3 +4,16 @@
     raco pkg install --auto pollen &&
     raco pollen publish build
   """
+
+[build.processing]
+  skip_processing = false
+[build.processing.css]
+  bundle = true
+  minify = false
+[build.processing.html]
+  pretty_urls = true
+[build.processing.images]
+  compress = true
+[build.processing.js]
+  bundle = false
+  minify = false
