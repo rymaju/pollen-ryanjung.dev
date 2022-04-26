@@ -1,7 +1,7 @@
 [build]
   publish = "build"
   command = """
-    raco pkg install --catalog https://pkg-build.racket-lang.org/server/built/catalog/ --binary-lib --skip-installed --no-docs --auto pollen  &&
+    raco pkg install --catalog https://pkg-build.racket-lang.org/server/built/catalog/ --catalog https://pkgs.racket-lang.org/ --binary-lib --skip-installed --no-docs --auto pollen  &&
     mkdir build &&
     raco pollen publish src build
   """
