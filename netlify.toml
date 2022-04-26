@@ -3,7 +3,7 @@
   command = """
     raco pkg install --no-docs --auto pollen  &&
     mkdir build &&
-    raco pollen publish build
+    raco pollen publish src build
   """
 
 [build.processing]
