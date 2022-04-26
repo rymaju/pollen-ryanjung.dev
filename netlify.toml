@@ -2,6 +2,7 @@
   publish = "build"
   command = """
     raco pkg install --auto pollen &&
+    mkdir build &&
     raco pollen publish build
   """
 
