@@ -22,7 +22,7 @@
 /* default to border-box */
 html {
   box-sizing: border-box;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 *,
