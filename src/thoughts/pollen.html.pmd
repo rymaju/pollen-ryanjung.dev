@@ -1,21 +1,23 @@
 #lang pollen
 ◊(define-meta title "Migrating my blog to Pollen")
 ◊(define-meta date "2022/04/24")
+◊(define-meta file-ext ".pmd")
 # ◊(select-from-metas 'title metas)
 ◊(select-from-metas 'date metas)
 
 
-I just moved by blog from Gatsby to Pollen. I wasn't happy with the GraphQL magic and JSX that I had to use in order to get a simple static site with HTML and CSS. 11ty seemed to do what I want, but I found writing HTML with Liquid and Nunjucks frustrating.
+I just moved my blog from Gatsby to Pollen. I wasn't happy with the GraphQL magic and JSX that I had to use in order to get a simple static website. 11ty seemed to do what I want, but I found writing HTML with Liquid and Nunjucks frustrating. You could automate a good amount of work with shortcodes but it was never fun to write.
 
 I wanted a framework that would allow me to write custom tags that could expand into valid HTML when compiled. If I could actually understand how it works that would be great too. Ideally the project structure would look something like this:
 
 ```
-template.html
-index.html
-other-pages/
+src/
+  template.html
   index.html
-  post.md
-style.css
+  other-pages/
+    index.html
+    post.md
+  style.css
 
 ->
 
@@ -53,6 +55,22 @@ In fact, Pollen markup files are really just glorified Racket programs! The read
 
 The file structure is plain simple. You have `whatever.html.pm` files that compile to `whatever.html` files under a build directory. Exactly what I wanted.
 
+## Deployment
+
+I previously hosted my Gatsby website through Netlify. If I could stay on Netlify, it would sure make my life a lot simpler.
+
+It turned out to be painful to build and deploy Pollen through Netlify; although in retrospect, a lot of that pain was due to user error.
+
+I was able to use homebrew to install Racket, but `raco pkg install --auto pollen` was taking *forever*. We're talking 45 minutes just to install pollen and its dependencies.
+
+I knew something was up. When I had previously attempted to download pollen in a Github Action (through the excellent setup-racket action) it only took a couple minutes.
+
+I saw that my naive `raco pkg install` was downloading irrelevant dependencies and rendering scribble. Getting rid of the scribble rendering via `raco pkg install --no-docs  ...` cut my time in half down to about 20 minutes, but that was still ridiculously slow.
+
+After finding a [StackOverflow post](https://stackoverflow.com/questions/60484316/installing-racket-packages-without-installing-dr-racket), I realized that I could just download a prebuilt binary with build dependencies stripped out. Turns out, that was the missing piece.
+
+After pointing `raco` at the right catalogs and passing in the `--binary` flag, the entire build took less than three minutes.
+
 
 ## Drawbacks
 
@@ -68,4 +86,4 @@ The one killer feature Pollen doesnt support is templates for templates. Right n
 
 If you're scarred by other static site generation tools and get tingles from saying "I built my website in Racket", then I highly reccommend Pollen.
 
-If you need a template, all the source code for my website can be found here.
+If you need a template, all the source code for my website can be found [here](https://github.com/rymaju/pollen-ryanjung.dev).

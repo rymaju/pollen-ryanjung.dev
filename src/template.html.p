@@ -1,6 +1,6 @@
-◊;defining constants for SEO
 ◊(define title (or (select 'title metas) (select 'h1 doc) "Ryan Jung"))
 ◊(define desc  (or (select 'desc metas) "My personal site, a web blog about software development, functional programming, and programming languages."))
+◊(define file-ext (or (select 'file-ext metas) ".pm"))
 
 <!DOCTYPE html>
 <html lang="en">
@@ -28,10 +28,10 @@
           <h1 class="my-name">Ryan Jung</h1>
           <ul class="nav-links">
             <li>
-              <a href="/">Home</a>
+              <a href="/index.html">Home</a>
             </li>
             <li>
-              <a href="/about">About</a>
+              <a href="/about.html">About</a>
             </li>
             <li>
               <a href="/thoughts">Thoughts</a>
@@ -55,7 +55,7 @@
           }
           </p>
           <p>
-            Built with <a href="https://docs.racket-lang.org/pollen/">Pollen</a> & <a href="https://racket-lang.org/">Racket</a>. See the source code for this page <a href="https://github.com/rymaju/pollen-ryanjung.dev/blob/main/src/◊|here|.pm">here</a>.
+            Built with <a href="https://docs.racket-lang.org/pollen/">Pollen</a> & <a href="https://racket-lang.org/">Racket</a>. See the source code for this page <a href="https://github.com/rymaju/pollen-ryanjung.dev/blob/main/src/◊|here|◊|file-ext|">here</a>.
           </p>
           <p>
             <small>

@@ -1,7 +1,7 @@
 #lang pollen
 
 index.html
-about/index.html
+about.html
 ◊thoughts/index.html{
     thoughts/pollen.html
     thoughts/links.html
