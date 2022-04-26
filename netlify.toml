@@ -1,12 +1,12 @@
 [build]
   publish = "build"
   command = """
-    raco pkg config --set catalogs \
-      "https://download.racket-lang.org/releases/8.4/catalog/" \
-      "https://pkg-build.racket-lang.org/server/built/catalog/" \
-      "https://pkgs.racket-lang.org" \
-      "https://planet-compats.racket-lang.org" &&
-    raco pkg install --binary --no-docs --auto pollen  &&
+    raco pkg install 
+      --catalog https://pkgs.racket-lang.org
+      --catalog https://pkg-build.racket-lang.org/server/built/catalog/
+      --binary 
+      --auto 
+      pollen  &&
     mkdir build &&
     raco pollen publish src build
   """
