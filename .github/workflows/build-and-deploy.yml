@@ -35,7 +35,7 @@ jobs:
           version: '8.3'
       
       - name: Install Pollen
-        run: raco pkg install --auto component koyo
+        run: raco pkg install --auto pollen
           
       - name: Build Pollen Source Files
         run: raco pollen publish build
