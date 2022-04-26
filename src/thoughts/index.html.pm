@@ -10,7 +10,7 @@
 
 ◊h1{Thoughts}
 
-A collection of short blog posts about programming. In order to get better at technical writing I'm aiming to write a short post every week.
+◊p{A collection of short blog posts about programming. In order to get better at technical writing I'm aiming to write a short post every week.}
 
 ◊h2{Chronological Order}
 ◊(apply ul #:class "toc"
