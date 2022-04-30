@@ -1,0 +1,50 @@
+#lang pollen
+◊(define-meta title "Why I Joined Palantir")
+◊(define-meta date "2022/05/1")
+◊(define-meta desc "A defence of Palantir, why I joined, and why you might consider joining too.")
+◊(define-meta file-ext ".pmd")
+# ◊(select-from-metas 'title metas)
+◊(select-from-metas 'date metas)
+
+
+In their own words, Palantir builds data driven operations and decision making software. They started off building software for the DoD in military context, but have since expanded into the commerical sector.
+
+But that's probably not the first thing you've heard about Palantir. The company is notorious for designing questionable software with awful consequences:
+
+- Palantir technology fueled [predictive policing in New Orleans](https://www.theverge.com/2018/2/27/17054740/palantir-predictive-policing-tool-new-orleans-nopd).
+- Palantir took on a contract to build [software for autonomous drones](https://thenextweb.com/news/report-palantir-took-over-project-maven-the-military-ai-program-too-unethical-for-google) after Google employees refused to work on it.
+- Palantir's Gotham platform helped ICE deport undocumented immigrants, seperating hundreds of parents from their children.
+
+When [Amnesty International calls you out for violating human rights](https://www.amnestyusa.org/wp-content/uploads/2020/09/Amnest-International-Palantir-Briefing-Report-092520_Final.pdf), you know you have some serious reflection to do.
+
+Yet despite it all, I (a strictly anti-war leftist snowflake) accepted an offer to intern at Palantir. Why? Is it the compensation? Was I out of options?
+
+No.
+
+I sincerely believe that working at Palantir will be an enriching experience and that my work will make a positive impact on the world. I think that Palantir plays and will continue to play an important role in making the world a better safer place.
+
+Desiging software for law enforcement, active combat, and counterterrorism, these are difficult domains with challening ethical implications. Yet we must create these systems, our future depends on it. The question is, can we create such systems while respecting privacy and civil liberties -- without descending into an Orwellian tech-dystopia?
+
+I don't know, but I do know that we're doomed unless we try -- and Palantir agrees. In fact, it was founded to address this very issue.
+
+The more I learned about Palantir, the more I aligned with their mission. What struck me the most was how open and introspective the company is. Their YouTube channel is full of videos addressing their critics. I discovered that a lot of my assumptions were untrue. They seem to care about data protection and always have. They aren't data brokers. They don't make mass surveillence systems. As far as I can tell, they put a lot of thought into how they use and organize data, a rare trait for a software company.
+
+In one video, CEO Alex Karp asks Paula Cipierre, EU Privacy and Public Policy Lead, why she joined Palantir in spite of all the controversy. In part, she responds:
+
+> What convinced me was the fact that I work with people who do not shy away from these difficult questions.
+>
+> On one hand, you can say okay, police and secret services must of course also work with data. This justifiably raises fears, and this must, of course, be subject to controls, and controls must be built-in at the technical level.
+>
+> But either you say, I don't want anything to do with this, I'll throw my hands up in the air and simply stay out of it. Or you roll up your sleeves and try to make a constructive contribution. ([clip](https://youtu.be/wheVmu7NwnM?t=113))
+
+I won't lie, the company's secretive nature and righetous branding make me nervous. I can't defend everything they do. I don't know much about their tech stack, if they follow test driven development, or whether they pair program ([although its looking like a no to all three](https://www.quora.com/How-is-Palantir-doing-these-days-2017)). Maybe their marketing fooled me. For all I know, they really are evil; I mean, who names their company _Palantir_, and core product _Gotham_?
+
+I considered my values, and the impact I want to leave on the world. I had other big name offers. I had to make a decision; I could spend this Summer making buttons shinier and social media dashboards load 0.2% faster, or I could be a Palanirian.
+
+Well, the choice was clear.
+
+
+- [Alex Karp's 2022 annual letter](https://www.palantir.com/newsroom/letters/2022-annual-letter/en/)
+- [Interview on data protection, civil liberties](https://www.youtube.com/watch?v=wheVmu7NwnM)
+- [Karp on Palantir](https://www.youtube.com/watch?v=phmJhHhNOUs)
+- [Palantir's response to Amnesty International](https://www.amnestyusa.org/wp-content/uploads/2020/09/Palantir-Technologies-Response-to-Amnesty-International-Letter.pdf)

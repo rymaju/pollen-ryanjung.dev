@@ -1,6 +1,6 @@
 #lang pollen
 ◊(define-meta title "Migrating my blog to Pollen")
-◊(define-meta date "2022/04/24")
+◊(define-meta date "2022/04/28")
 ◊(define-meta file-ext ".pmd")
 # ◊(select-from-metas 'title metas)
 ◊(select-from-metas 'date metas)
@@ -45,7 +45,7 @@ You can evaluate arbitrary Racket expressions using `◊"◊"` Unlike most stati
 
 A collection of short blog posts about ...
 
-◊"◊"(apply ul #:class "toc"
+◊"◊"(apply ul
   (map (compose li node->link) (children 'thoughts/index.html)))
 ```
 
