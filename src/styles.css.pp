@@ -106,8 +106,14 @@ margin-bottom: 2em;
 }
 
 article li,
-article p {
+article p,
+article hr {
 max-width: min(var(--prose-max-width), 100%);
+}
+
+article hr {
+  margin-inline-start: 0;
+  margin-block: 2em;
 }
 
 
