@@ -30,8 +30,8 @@
                 ◊section{
                 ◊strong{What I am (or was) up to:}
                 ◊ul{
-                    ◊li{Leading development at Code 4 Community, developing software for nonprofits in Boston and their 10,000s of users.}
-                    ◊li{Developing a Redex model for Minikanren}
+                    ◊li{Leading development at ◊a[#:href "https://c4cneu.com"]{Code 4 Community}, developing software for nonprofits in Boston and their 10,000s of users.}
+                    ◊li{Developing a ◊a[#:href "https://github.com/rymaju/minikanren-redex"]{Redex model for Minikanren}}
                     ◊li{TA for CS4500 Software Development. ◊span[#:style "color:gray"]{Fall 2022}}
                     ◊li{TA for CS4400 Programming Languages. ◊span[#:style "color:gray"]{Summer 2022}}
                     ◊li{Protecting civil liberties at Palantir. ◊span[#:style "color:gray"]{Summer 2022}}
@@ -62,8 +62,8 @@
                 ◊li{💬 He/Him}
                 ◊li{🎓 BSCS @ Northeastern 2023}
                 ◊li{💼 FDE Intern @ Palantir}
-                ◊li{✨ Co-President of ◊abbv[#:title "Code 4 Community"]{C4C}}
-                ◊li{📝 Résumé}
+                ◊li{✨ Co-President of ◊a[#:href "https://c4cneu.com"]{◊abbv[#:title "Code 4 Community"]{C4C}}}
+                ◊;◊li{📝 Résumé}
                 ◊li{💻 ◊a[#:href "https://github.com/rymaju/"]{Github}}
                 ◊li{📘 ◊a[#:href "https://www.linkedin.com/in/ryanmjung/"]{LinkedIn}}
                 ◊li{📧 ryan.matthew.jung⚓gmail.com}

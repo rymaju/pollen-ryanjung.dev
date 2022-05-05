@@ -33,7 +33,8 @@ html {
 
 /* adjust typography defaults */
 body {
-  margin: 1rem;
+  margin-block: 1em;
+  margin-inset: 0.5em;
   line-height: 1.5;
   color: #454545;
 }
@@ -171,8 +172,9 @@ color: inherit;
 }
 
 .my-ugly-mug {
-  height: width;
   object-fit: cover;
+  object-position: center top;
+  aspect-ratio: 2 / 3;
 }
 .profile {
 width: min(100%, 400px);
@@ -203,6 +205,9 @@ width: 66%;
   }
   .prose {
     max-width: 100%;
+  }
+  .my-ugly-mug {
+    aspect-ratio: 1 / 1;
   }
 
 }

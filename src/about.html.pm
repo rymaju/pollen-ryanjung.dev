@@ -28,7 +28,7 @@ Q: What's your favorite programming language?
 }}
 ◊p{
 A: My least hated programming language is Racket.
-◊img[#:src "https://ryanjung.dev/racket-my-beloved.gif"]
+◊img[#:src "/racket-my-beloved.gif"]
 }
 
 
@@ -47,7 +47,7 @@ Q: How do I get better at <insert here>?
 }}
 ◊p{
 A: Practice, practice, practice.
-◊img[#:src "https://ryanjung.dev/static/d53f2eac453cbb8d93aa9214bfb20418/13725/2942ad72943ca3e56c178983808781e0.webp"]
+◊img[#:src "https://pbs.twimg.com/media/DRgAB30VQAAoY2i.jpg"]
 }
 
 ◊p{◊strong{
