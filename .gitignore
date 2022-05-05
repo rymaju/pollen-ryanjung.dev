@@ -1,0 +1,20 @@
+# Whatever Emacs generated
+.DS_Store
+.idea
+*.log
+tmp/
+
+# Racket artifacts
+compiled/
+*~
+\#*
+.#*
+*.bak
+
+# Pollen artifacts
+*.html
+*.css
+*.js
+*.txt
+*.xml
+build/

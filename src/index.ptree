@@ -1,0 +1,10 @@
+#lang pollen
+
+index.html
+about.html
+◊thoughts/index.html{
+    thoughts/why-palantir.html
+    thoughts/howto-ta.html
+    thoughts/pollen.html
+    thoughts/links.html
+    thoughts/quotes.html}

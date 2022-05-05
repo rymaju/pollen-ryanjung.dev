@@ -1,0 +1,103 @@
+#lang pollen
+◊(define-meta title "HOWTO: Be a good teaching assistant (TA)")
+◊(define-meta date "2022/04/28")
+◊(define-meta desc "How to be a good teaching assistant. Tips and tricks that I've picked up after my 2+ years of experience.")
+◊(define-meta file-ext ".pmd")
+# ◊(select-from-metas 'title metas)
+◊(select-from-metas 'date metas)
+
+
+Some students are fortunate enough to have the opportunity to be a teaching assistant. I'm one of them. For most of my time in college, I was also a teaching assistant for some computer science course. I've taught Fundies 1 (Northeastern's introduction to computer science), a special topics class on miniKanren, and I'll soon be a TA for Programming Languages and Software Development.
+
+Teaching is an enriching experience. It's the surest way to really *grok* a subject, but being a teaching assistant for a rigorous class can be hard. Nobody tells you how to be a good TA. I had to stumble and fail endlessly before I truly felt competent. What's worse is that my failures weren't harmless. I let down dozens of students who came to me earnestly seeking help.
+
+I hope to catalog what I've learned in order to help others avoid my mistakes.
+
+
+## Office Hours
+
+Office hours are sometimes the only way a student can seek one-on-one instruction in a course. It is the rare opportunity to talk directly to someone with knowledge and authority. They're also one of the few times a student can talk openly about problems they have with the course. As a peer and TA it's your responsibility to answer questions with empathy and respect, without depriving students of their own learning.
+
+### Tip 1: Smile
+
+The reality of office hours for medium/large courses is that they get busy, fast. I've seen students wait hours in online queues just to see me for a period of less than 15 minutes.
+
+Also know that many students see office hours as their last resort. If they're here, it means that they tried everything they could and it still hasn't worked. They're frustrated and exhausted.
+
+That's why it's so important to smile. Look happy. Ask them how they are. Its just the nice and right thing to do.
+
+### Tip 2: Use a diagnostic
+
+Most TAs enter office hours without a plan. They meet a student, ask them: "How can I help?", and wing it from there.
+
+I did that for a long time. I thought it worked. It doesn't.
+
+The problem is that students (especially those new to programming) are often unable to identify the root cause of a problem, and confuse an incorrect attempted solution with the actual issue. In industry we call this the [XY Problem](https://xyproblem.info/).
+
+You can prevent the XY problem by running a "diagnosic". A diagnostic is a set of questions you ask to categorize what a student needs help with. A diagnostic will look different depending on the content of the course or currently assigned homework.
+
+I reccomend that before every session of office hours, you create an appropriate diagnostic. It could look something like this:
+
+```
+Diagnostic:
+
+A student writing a function for this assignment is in one of the following stages:
+1. Problem analysis
+2. Signatures and purpose statements
+3. Functional examples
+4. Filling out a template
+5. Implementation code
+6. Runing tests
+
+Ask: "Can you show me where/how you did <X>?", where <X> is one of the 6 steps listed above.
+```
+
+Note that the question is open as opposed to closed (not: "Did you do <X>? [yes/no]").
+
+This strategy works exceptionally when systematic design is a core component of the class. Fundies 1 is a good example.
+
+By the way, the design recipe diagnostic above is great in a lot of contexts. Try to reuse it when possible.
+
+### Tip 3: Talk less, ask more
+
+TAs often have a simplistic view of teaching and learning. You, the TA know the material. The student does not. They ask a question, and you deliver the answer. If only teaching were truly this simple. These TAs are prone to long rambling explanations. They take the opportunity to flex their knowledge and move on to the next student.
+
+If you have ever given a five minute speech, written code on behalf of a student, or given away an answer out of exhaustion, you are the problem; you have fundamentally failed your role as TA.
+
+Your job isn't to give a lecture, to give hints, or to tell students what to do verbatim. Your job is guide their thinking in the right direction. This is much harder than the alternative, but it is the only way to encourage actual learning. The best method we know of doing this so far is the Socratic method. Put simply, keep asking questions. Here are some that I have found useful:
+
+```
+S: "Help! Why isn't it working?"
+T: "What specifically isn't working?"
+OR "Why is the current behavior different from what you're expecting?"
+```
+
+This forces the student to properly verbalize what has happened and what they want to happen. If the student is able to identify both, they can begin to form a strategy of how to get from their failing solution to their intended behavior.
+
+Another great question that was already mentioned earlier:
+
+```
+"How can I help? / What can I do to help?"
+```
+
+This question gives full control over to the student. When a diagnostic fails, digging deep into the answer to this question will inform where you should guide this student.
+
+```
+"What have you tried so far?"
+```
+
+This question is illuminating because it prompts the student to explain their thought process. Often TAs forget that a student has likely tried multiple failed solutions before falling back on office hours.
+
+Other times, this question reveals that a student *hasn't* tried any other solutions. They assumed a TA would just spoon feed them an answer (you can blame bad TAs for this). When this happens, you should point to the homework instructions and kindly request that the student try it on their own first.
+
+```
+S:  "Can you explain <X>?"
+T:  "First, tell me what you know about <X>!"
+```
+
+"Can you explain <X>?" is a tempting question. A student is prompting you to go into advice/lecture mode. Stop! First ask the student to elaborate on what *they* currently understand. It will reveal what they actually know, what they (incorrectly) think they know, and what they truly don't know. You can use this information to tailor your answer for the student.
+
+
+Finally, there will be times when students are genuinely lost. Sending them away to work on the homework independently or directing them to resources would only be cruel. This situation should be uncommon; if not, you need to talk to an instructor ASAP.
+
+This is the only time when you should go into advice/lecture mode. This is because you're essentally reteaching content that this student ought to already know. Despite this, you should stop frequently and check in with the student. Try to phrase your speech as a series of questions. Do not just blabber on for ten minutes and finish with a "does that make sense?". Try to make the student feel like an active participant, not a passive listener.

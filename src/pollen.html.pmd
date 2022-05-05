@@ -1,0 +1,19 @@
+#lang pollen
+
+
+
+Deep Thought
+============
+
+I am **so** happy to be writing this.
+
+Lists in markdown still work:
+
+- a
+- b
+- c
+
+```
+(define (square x)
+  (* x x))
+```
