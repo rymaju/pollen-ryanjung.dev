@@ -19,8 +19,17 @@
     <meta data-react-helmet="true" name="twitter:title" content="◊|title|">
     <meta data-react-helmet="true" name="twitter:description" content="◊|desc|">
 
-<title>◊|title|</title>
+    <title>◊|title|</title>
     <link rel="stylesheet" type="text/css" href="/styles.css" />
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8GNFS4T3Y0"></script>
+    <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag(){dataLayer.push(arguments);}
+     gtag('js', new Date());
+
+     gtag('config', 'G-8GNFS4T3Y0');
+    </script>
   </head>
 <body class="lang-racket">
       <div class="centered-content-container">
