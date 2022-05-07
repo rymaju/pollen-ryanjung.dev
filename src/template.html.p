@@ -64,7 +64,7 @@
           }
           </p>
           <p>
-            Built with <a href="https://docs.racket-lang.org/pollen/">Pollen</a> & <a href="https://racket-lang.org/">Racket</a>. See the source code for this page <a href="https://github.com/rymaju/pollen-ryanjung.dev/blob/main/src/◊|here|◊|file-ext|">here</a>.
+            Built with <a href="https://docs.racket-lang.org/pollen/">Pollen</a> & <a href="https://racket-lang.org/">Racket</a>. See <a href="https://github.com/rymaju/pollen-ryanjung.dev/blob/main/src/◊|here|◊|file-ext|">the source code for this page on Github</a>.
           </p>
           <p>
             <small>
