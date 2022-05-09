@@ -7,7 +7,6 @@
 ◊(select-from-metas 'date metas)
 
 
-
 A quick search of Palantir will yield a dozen articles with concerning headlines. You'll hear about how Palantir allegedly helped ICE separate families at the border, misused NHS data during the COVID-19 pandemic, encouraged predictive policing in New Orleans, and took on a secretive contract with the US military that even Google refused.
 
 I'm often sent these articles, and  recited one or two damning quotes too. I think people either assume I've never heard of the controversy and wish to educate me or simply want to reprimand me for condoning "such an evil company". A lot of these are friends that I trust, and who share my ethical and political values.
@@ -18,32 +17,29 @@ No. I genuinely feel that Palantir does good work.
 
 That might be hard to believe. I honestly wouldn't have believed it myself a year ago, but after some research into the company and their products, I think that there's a lot more to the company than what the media portrays.
 
-Coming out of the reports, especially those by Amnesty International and Privacy International, you might get the impression that Palantir creates some kind of Orwellian surveillance software or acts as an international data broker. What information I've found on the company, however, paints a different picture.
+You may read the reports, especially those by Amnesty International and Privacy International, and get the impression that Palantir creates some kind of Orwellian surveillance software or acts as an international data broker. What information I've found on the company, however, paints a different picture.
 
 As far as I can tell, Palantir's core offerings (Gotham and Foundry) are data processing and decision making platforms. You can think of them as a hybrid of Looker, Tableau, Databricks, Airflow, and Snowflake. It forms associations between a data and real world concepts in what they call an "ontology" (if you're familiar with Domain Driven Design, this concept will be familiar to you). Importantly, they built their software with data protection and permissions from day one, which is how they were able to sell their software to the military and three letter agencies in the first place.
 
-The history of the company is important: Palantir was founded in 2003, in the shadow of 9/11, the Patriot Act, and the Iraq war. Their goal was to produce software for the government that protected its citizens, without sacrificing their privacy and civil liberties.
+The history of the company is important: Palantir was founded in 2003, in the shadow of 9/11, the Patriot Act, and the Iraq war. Their goal was to produce software for the government that could protect its citizens without sacrificing privacy and civil liberties.
 
 Palantir's culture has been strongly molded by its CEO, Alex Karp. Karp is a self proclaimed progressive who got a doctorate in neoclassical social theory at the Frankfurt School in Germany. The company prides itself on a strong sense of classical liberalism, and hires an army of ethics academics to keep the company accountable.
 
-Their official stance is that the West should lead the world, and that software is key to maintaining and advancing their lead. That makes a lot of people uncomfortable, but I broadly agree with that worldview.
+Their official stance is that the West should lead the world, and that software is key to maintaining and advancing their lead. That makes a lot of people uncomfortable, but I personally broadly agree with that worldview.
 
-As such, some of Palantir's customers are government organizations, many of which are broadly untrusted by the American public. But, part of Palantir's mission is to deliver high quality software to improve these institutions. I think most Americans would agree that we want a high functioning and efficient military and police force. They have problems, and of course we ought to keep them accountable as good citizens, but we also rely on them to protect us both abroad and at home. To some, including me, it's terrifying to know that our prosperity is predicated on guns and steel, but that's the unfortunate truth.
+As such, some of Palantir's customers are government organizations. Many of those organizations are rightfully untrusted by the American public. Regardless, it's in our best interest to improve these institutions; I think most Americans would agree that we want a just and efficient military and police force. These institutions have problems, and of course we ought to hold them accountable, but we also rely on them to protect us both abroad and at home. In my opinion, software can improve the efficiency and privacy of the system without worsening systemic injustice. I know that's a very software engineer thing to say, but that's genuinely what I believe.
 
+Now that we have an overview of the company, let's address the controversial reports directly. While many are coming from a good place with genuine concern for our privacy, they also fundamentally misunderstand what Palantir does and fail to make any concrete accusations.
 
+It's possible to develop a data processing platform that doesn't record the data it consumes; that is, you don't need to own data in order to process it. An IDE or word processor doesn't record or own the string of characters you write with it, for example. Claims that Palantir is recording or training AI models based on customer data seem to misunderstand this. They extrapolate and hypothesize possible violations of data protection, but are unable to point to any real crime.
 
-To address the controversial reports directly: while many are coming from a good place with genuine concern for our privacy, they also fundamentally misunderstand what Palantir does and fail to make any concrete accusations.
-
-As technically literate people know, it is possible to develop a data processing platform that doesn't record the data it consumes; that is, you don't need to own data in order to process it. An IDE or word processor doesn't record or own the string of characters you write with it, for example. Claims that Palantir is recording or training AI models based on customer data seem to misunderstand this essential fact. They extrapolate and hypothesize possible violations of data protection, but are unable to point to any real crime.
-
-This misunderstanding is pervasive across all the reports on Palantir I could find. In fact, I was unable to produce a single substantial claim against Palantir's software itself. What exactly is Palantir's software responsible for and how? What specific feature, what essential service did Palantir provide that led to tragedy? As I've already discussed, all Palantir does is offer a data processing platform. The reason why nobody has directly addressed the software is because it's hard to argue that a super-charged Looker was essential in executing Trump's inhuman immigration policy.
+This misunderstanding is pervasive across all the reports on Palantir I could find. In fact, I was unable to produce a single substantial claim against Palantir's software itself. What exactly is Palantir's software responsible for and how it more culpable than the office printer? As I've already discussed, all Palantir does is offer a data processing platform. The reason why nobody has directly addressed the software is because it's difficult to explain how a super-charged Looker could possibly be essential in executing Trump's inhuman immigration policy.
 
 So instead of actually making a solid accusation, the reports tend to lean into criticizing the company's secretive nature or condemning Palantir by association.
 
 The former is a real concern, but often just an unfortunate reality of working with the government.
 
-
-I find the latter unconvincing. At most, you can criticize who Palantir agrees to do business with. As for the police, I think you'll find it difficult to find a department (or really any legal institution) without an extensive history of systematic racism. While I personally disagree with Palantir's continued work with ICE, I also understand continuing the contract. ICE does important work to stop sex trafficking, and despite what Twitter would have you believe it's not easy to decide to what extent Silicon Valley executives should hold back the execution of public policy.
+I find the latter unconvincing. At most, you can criticize who Palantir agrees to do business with. As for the police, I think you'll find it difficult to find a department (or really any legal institution) without an extensive history of systematic racism. While I personally disagree with Palantir's continued work with ICE, I also understand continuing the contract. Critics ignore that ICE is also responsible for stopping human trafficking, an often forgotten but horrifyingly frequent instance of modern day slavery.
 
 I won't lie, the company's secretive nature and righteous branding does make me nervous, and I don't agree with everything they do. Maybe their marketing fooled me. For all I know, they really are evil; I mean, who names their company _Palantir_, and core product _Gotham_?
 
@@ -53,6 +49,8 @@ But the way I see it, you can look at Palantir, throw your hands up, and stay aw
 ---
 
 ### Aside
+
+The above is the crazed ramblings of a soon-to-be Palantir intern, and primarily aimed at my friends. None of this is endorsed by or reflects the views of Palantir itself.
 
 While I focused mainly on Palantir's work with morally dubious government organizations, they also do a lot of great work with private companies.
 
