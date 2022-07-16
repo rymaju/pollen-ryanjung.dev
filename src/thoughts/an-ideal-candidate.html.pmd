@@ -42,10 +42,13 @@ In the past, our application process mostly favored Good Current Technical Skill
 
 This gave a nice approximation, but failed in crucial ways.
 
-- Our developers struggled in ambiguity.
+*Our developers struggled in ambiguity.*
+
   - This is because we weren't focusing on mentorship enough...
   - but this was also because we didn't vet for those who could be resourceful, apply good design decisions, and take ownership.
-- Our developers failed to apply basic lessons from F1, F2, and OOD.
+
+*Our developers failed to apply basic lessons from F1, F2, and OOD.*
+
   - We inherited a culture of "get it done" laziness that's hard to shake. This caused a bunch of problems that can be broadly categorized as cultural and technical debt.
   - Cultural change starts from within but also needs to be enforced at the edges. New members need to start thinking about programming as design.
 
@@ -70,13 +73,19 @@ You might imagine the first 30 minutes being allocated to a design problem, idea
 - A nonprofit wants to gather data and visualize stats on every school library in the Carribean.
 
 We would look to see that candidates:
-- Ask insightful followup clarification questions.
+
+*Ask insightful followup clarification questions.*
+
   - Exactly what neighborhoods in Boston? What kind of information per tree?
   - What kind of events? Who is going to these events?
   - How will data be gathered? What insights are they looking for?
-- Show empathy for the users.
+
+*Show empathy for users.*
+
   - What are their goals? Motivations? How will this software *work* for them.
-- Write pseudocode / whiteboard to describe what the application would do on a high level.
+
+*Write pseudocode / whiteboard to describe what the application would do on a high level.*
+
 
 
 The other half of the interview is to confirm they pass our Vibe standards, and possibly that they're eager to learn. This would mostly be poking for red flags.
