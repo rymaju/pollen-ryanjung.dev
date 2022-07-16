@@ -1,0 +1,107 @@
+#lang pollen
+◊(define-meta title "An Ideal Candidate")
+◊(define-meta date "2022/07/15")
+◊(define-meta desc "Musings on what a great developer candidate looks like, plus whether we should be doing consulting.")
+◊(define-meta file-ext ".pmd")
+# ◊(select-from-metas 'title metas)
+◊(select-from-metas 'date metas)
+
+We recently opened developer applications for [Code 4 Community](https://c4cneu.com). As such, I've been doing a lot of deep thinking on the application process, and what an ideal candidate looks like.
+
+Most companies do some kind of algorithmic challenge to filter candidates. There are a few reasons why that wasn't appropriate for us:
+
+1. Many applicants don't have the algorithmic background required (freshman, sophomores) but we still want to invite them to apply and grow via mentorship
+2. They're dehumanizing and don't offer applicants an opportunity to be more than a percentage of unit tests passed.
+
+We've had this opinion for as long as the club has been around, but never considered it any deeper than that. Why do we feel this way? Are there deeper cultural factors that motivated this decision?
+
+I've come to the conclusion that when "hiring" for C4C developers what we're really checking for is the following:
+
+### Vibe
+
+You must pass *all* of these criteria:
+
+1. Niceness (i.e. can I work with you or are you an asshole? will you make our club a happier/friendlier place to be?)
+2. Drive (are you going to stick around and do your work?)
+3. Motivation (do you actually care about helping nonprofits?)
+
+### Ability
+
+You must show *at least one of* these criteria
+
+1. Eagerness to Learn (can we mentor you into an awesome dev in 1-2 semesters?)
+2. Good Current Technical Skills (are you coming in with the skills that allow you to get started right away?)
+
+_but_, regardless you must demonstrate an understanding of...
+
+3. Program Design
+
+---
+
+In the past, our application process mostly favored Good Current Technical Skills, and sort of checked for Vibe through meandering untargeted interviews. Nothing in the process targeted Program Design.
+
+This gave a nice approximation, but failed in crucial ways.
+
+- Our developers struggled in ambiguity.
+  - This is because we weren't focusing on mentorship enough...
+  - but this was also because we didn't vet for those who could be resourceful, apply good design decisions, and take ownership.
+- Our developers failed to apply basic lessons from F1, F2, and OOD.
+  - We inherited a culture of "get it done" laziness that's hard to shake. This caused a bunch of problems that can be broadly categorized as cultural and technical debt.
+  - Cultural change starts from within but also needs to be enforced at the edges. New members need to start thinking about programming as design.
+
+
+---
+
+
+Our new process consists of a form with three questions, then an interview.
+
+The purpose of the form is to ask:
+
+- Can you design programs? Can you talk about programming in a sophisticated manner and evaluate different design decisions along with their tradeoffs?
+- Are you an empathetic human being that we can work with. The bar is pretty low but ideally you're someone who will go above and beyond to make someone feel included.
+- What will motivate you to contribute to C4C? Our mission? Our partners? Opportunity for mentorship? We need signs that you're going to stay when the going gets tough -- that you're not _just_ here for your resume.
+
+In a perfect world, my interview would have two parts: a design brainstorm and a date.
+
+You might imagine the first 30 minutes being allocated to a design problem, ideally one that's real and that C4C has solved before.
+
+- A nonprofit wants an application to catalog every tree in Boston.
+- A nonprofit wants to build an event registration service.
+- A nonprofit wants to gather data and visualize stats on every school library in the Carribean.
+
+We would look to see that candidates:
+- Ask insightful followup clarification questions.
+  - Exactly what neighborhoods in Boston? What kind of information per tree?
+  - What kind of events? Who is going to these events?
+  - How will data be gathered? What insights are they looking for?
+- Show empathy for the users.
+  - What are their goals? Motivations? How will this software *work* for them.
+- Write pseudocode / whiteboard to describe what the application would do on a high level.
+
+
+The other half of the interview is to confirm they pass our Vibe standards, and possibly that they're eager to learn. This would mostly be poking for red flags.
+
+So if we find out that:
+- You're predjudiced in some way that is antithetical to our open and inclusive culture, GTFO
+- You don't really care about C4C or our mission
+- You're stubborn and not easy to work with
+- You fundamentally do not understand how to program, and 1-2 semesters would not be enough to get you to contribute effectively
+
+
+---
+
+I like this approach better primarily because it emphasizes candidates as individuals -- beings with intristic motivations, latent talent, and willingness to be mentored. It is purposefully *not* a test of where you are, but a projection of where you might be.
+
+
+---
+
+There's one final step to the interview process: the post-acceptance interview. A one-on-one sync up with the new recruit to get to know them. The interview process vets that there is oppportunity for growth, but it neglects to specify how each individual should be nurtured. Mentors + the Director of Engineering should trade answering questions like:
+
+- Why C4C?
+- What's your learning style? (iirc these are a myth, but still a good guiding question)
+- What do you want out of C4C?
+- Where do you see yourself in a year? Two?
+- How do you want to prepare yourself for the professional/academic world?
+- What important truth do very few people agree with you on? (the Thiel question)
+- What, if anything, is too serious to be joked about?
+- If you could give a warning to people before they got to really know you, what would it be?
