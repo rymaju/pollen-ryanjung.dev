@@ -92,11 +92,12 @@ The other half of the interview is to confirm they pass our Vibe standards, and 
 
 So if we find out that:
 
-- You're predjudiced in some way that is antithetical to our open and inclusive culture, GTFO
+- You're predjudiced in some way that is antithetical to our open and inclusive culture
 - You don't really care about C4C or our mission
-- You're stubborn and not easy to work with
+- You're obviously not easy to work with
 - You fundamentally do not understand how to program, and 1-2 semesters would not be enough to get you to contribute effectively
 
+...then its a dealbreaker.
 
 ---
 
@@ -115,3 +116,15 @@ There's one final step to the interview process: the post-acceptance interview. 
 - What important truth do very few people agree with you on? (the Thiel question)
 - What, if anything, is too serious to be joked about?
 - If you could give a warning to people before they got to really know you, what would it be?
+
+---
+
+As a final note, I continue to wonder if we ought to have a more rigorous process for our PMs, who really aren't PMs.
+
+They're really what (at Palantir) we would call a Deployment Strategist. A semi technical person who's focused on customer communications, scoping new work, and discovering new use cases.
+
+Another failure of C4C's structure is that product teams are passive. They assume that our partners know what they want and we just need to deliver.
+
+Software doesn't work that way. If we wait for our partners to figure out what they want, we'll waste time building software that isn't providing value.
+
+We need to be more hands on, see our partners in person, and see our products in action. I increasingly worry that our products don't solve what our partners _really_ need.
