@@ -39,7 +39,7 @@ Q: How do I join Code 4 Community?
 }}
 ◊p{
 A: Apply! Show that you have a love of learning.
-The recuitment overview and tips on our website are very comprehensive.
+The recuitment overview and role description on our website are very comprehensive. If you're really curious about the rationale behind the scenes, see my blog post [An Ideal Candidate]("/thoughts/an-ideal-candidate.html")
 }
 
 ◊p{◊strong{
